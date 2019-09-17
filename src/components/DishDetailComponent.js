@@ -5,9 +5,9 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
     const DishDetail = (props) => {
         console.log(props.dish)
-        const dish = props.dish;
+        
 
-        if (dish != null) {
+        if (props.dish != null) {
             return (
                 <div className="row">
                     {/* <Card>
@@ -38,7 +38,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
     function RenderDish({dish}) {
         if (dish != null)
             return (
-                <Card key={dish.id} onClick={() => this.props.onClick(dish.id)}>
+                <Card>
                     <CardImg top src={dish.image} alt={dish.name} />
                     <CardBody>
                         <CardTitle>{dish.name}</CardTitle>
@@ -53,7 +53,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
     }
 
     function RenderComments({dish}) {
-
+        console.log(dish)
         return (
             <ul className="list-unstyled">
                 {dish.comments.map(comment => {

@@ -3,6 +3,7 @@ import { Card, CardImg, CardImgOverlay, Breadcrumb, BreadcrumbItem, CardText, Ca
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+
 function RenderMenuItem({ dish, onClick }) {
 	return (
 		<Card>

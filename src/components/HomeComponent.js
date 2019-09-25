@@ -47,7 +47,7 @@ function Home(props) {
                     <RenderCard item={props.leader} />
                 </div>
             </div>
-            <h4>Home</h4>
+            
         </div>
     );
 }
